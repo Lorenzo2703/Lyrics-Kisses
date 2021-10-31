@@ -1,0 +1,22 @@
+<ion-content [scrollEvents]="true">
+    <div *ngIf="song.id!==53">
+        <div class="m-3">
+            <img class="song " src="../../assets/images/{{song?.img}}.jpg">
+            <h5 class="my-2 text-center m-0 p-0 ">{{song.titolo}}</h5>
+            <h6 class="my-2 p-2  text">{{song.testo}}</h6>
+        </div>
+        <audio controls autoplay controlsList="nodownload noplaybackrate" class="my-4 audio p-1 w-100 ">
+            <source src="../../assets/mp3/{{song?.canzone}}.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div *ngIf="song.id===53">
+        <div>
+            <video class="my-4 w-100" width="100%" height="auto" controlsList="nodownload noplaybackrate" controls
+                autoplay>
+                <source src="../../assets/video/file_example_MP4_640_3MG.mp4" type="video/mp4">.
+            </video>
+            <h5 class="m-2 text-center m-0 p-0 ">{{song.titolo}}</h5>
+            <h6 class="m-2 p-2  text">{{song.testo}}</h6>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Lyrics Kisses",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

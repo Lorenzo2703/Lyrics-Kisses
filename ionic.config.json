@@ -1,0 +1,7 @@
+{
+  "name": "Lyrics Kisses",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

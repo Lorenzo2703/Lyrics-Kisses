@@ -1,0 +1,11 @@
+.titolo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testo {
+  color: rgb(51, 51, 51);
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: medium;
+  font-style: italic;
+}

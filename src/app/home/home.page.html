@@ -1,0 +1,85 @@
+<ion-content [fullscreen]="true" [scrollEvents]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="secondary">
+        <ion-button color="warning" (click)="text()">
+          <ion-icon slot="start" name="document-text-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      <ion-title>Lyrics Kisses</ion-title>
+      <ion-buttons slot="primary">
+        <a href="https://open.spotify.com/playlist/1iGTqiNrN8iCnRu4p6CJPC?si=b08c598b4e954e8a">
+          <ion-button color="success">
+            <ion-icon slot="end" name="musical-notes-outline"></ion-icon>
+          </ion-button>
+        </a>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="mt-4">
+    <span class=" m-3"> Dedicated song of the day ❤</span>
+    <div class="line"></div>
+    <div tappable (click)="openSong(dedicatedSong?.id)">
+      <img class="dedicated my-4" src="../../assets/images/{{dedicatedSong?.img}}.jpg">
+      <h6 class="text-center m-0 p-0">{{dedicatedSong?.titolo}}</h6>
+    </div>
+  </div>
+
+
+  <div class="margintop">
+    <span class=" m-3">Songs that remind me of you... &hearts;</span>
+    <div class="line"></div>
+  </div>
+  <ion-slides class="mt-2 p-2" [options]="opts">
+    <ion-slide class="p-2" *ngFor="let item of list1" tappable (click)="openSong(item?.id)">
+
+      <div>
+        <img class="card-custom" src="../../assets/images/{{item?.img}}.jpg">
+        <h6 class="text">{{item?.titolo}}</h6>
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div class="margintop">
+    <span class=" m-3">Songs for you
+      &hearts;</span>
+    <div class="line"></div>
+  </div>
+  <ion-slides class="mt-2 p-2" [options]="opts">
+    <ion-slide class="p-2" *ngFor="let item of list2" tappable (click)="openSong(item?.id)">
+
+      <div>
+        <img class="card-custom" src="../../assets/images/{{item?.img}}.jpg">
+        <h6 class="text">{{item?.titolo}}</h6>
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div class="margintop mb-4">
+    <span class=" m-3">Songs we have in common &hearts;</span>
+    <div class="line"></div>
+  </div>
+  <ion-slides class="mt-2 p-2" [options]="opts">
+    <ion-slide class="p-2" *ngFor="let item of list3" tappable (click)="openSong(item?.id)">
+
+      <div>
+        <img class="card-custom" src="../../assets/images/{{item?.img}}.jpg">
+        <h6 class="text">{{item?.titolo}}</h6>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="margintop text-center mb-4">
+    <span class=" m-3 ">Special gift 🎁</span>
+    <div class="line"></div>
+    <div tappable (click)="openSong(special?.id)">
+      <img class="special my-4" src="../../assets/images/{{special?.img}}.jpg">
+      <h6 class="text-center m-0 p-0 pb-4">{{special?.titolo}}</h6>
+    </div>
+  </div>
+
+</ion-content>
