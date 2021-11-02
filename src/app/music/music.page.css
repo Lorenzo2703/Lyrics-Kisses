@@ -19,6 +19,13 @@
   overflow-y: scroll;
 }
 
+.text-1 {
+  font-size: small;
+  height: 50vh;
+  white-space: pre-wrap;
+  overflow-y: scroll;
+}
+
 .audio {
   position: absolute;
   bottom: 20px;
