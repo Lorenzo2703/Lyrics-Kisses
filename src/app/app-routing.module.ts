@@ -18,7 +18,11 @@ const routes: Routes = [
   },
   {
     path: 'text', component: TextPage
-  }
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
+  },
 ];
 
 @NgModule({

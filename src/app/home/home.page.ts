@@ -20,11 +20,6 @@ export class HomePage implements OnInit {
   list3 = [];
   special = this.data.list[53];
 
-  opts = {
-    slidesPerView: 2.6,
-    freeMode: true
-  };
-
   dedicatedSong;
 
   constructor(private router: Router, private data: DataService) { }

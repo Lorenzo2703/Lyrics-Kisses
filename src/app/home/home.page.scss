@@ -32,7 +32,7 @@
 }
 
 .card-custom {
-  height: 30vw !important;
+  aspect-ratio: 1/1 !important;
   border-radius: 5% !important;
   object-fit: cover;
   box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.4);
@@ -59,7 +59,7 @@
 }
 
 .special {
-  width: 80%;
+  width: 50%;
   height: auto;
   object-fit: cover;
   box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.4);
@@ -68,4 +68,23 @@
 
 .text {
   font-size: xx-small;
+}
+
+ion-content {
+  height: 40vw;
+}
+
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

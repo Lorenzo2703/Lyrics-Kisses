@@ -5,11 +5,13 @@
             <h5 class="my-2 text-center m-0 p-0 ">{{song.titolo}} - {{song.artista}}</h5>
             <h6 class="my-2 p-2  text">{{song.testo}}</h6>
         </div>
-        <audio controls autoplay controlsList="nodownload noplaybackrate" class="my-4 audio p-1 w-100 ">
+        <button (click)="prev()" class="prev my-4 p-2">&lt;&lt;</button>
+        <audio #audioElement controls autoplay controlsList="nodownload noplaybackrate" class="my-4 audio p-1 ">
             <source src="../../assets/mp3/{{song?.canzone}}.mp3" type="audio/mp3">
         </audio>
+        <button (click)="next()" class="next my-4 p-2">&gt;&gt;</button>
     </div>
-    <div *ngIf="song.id===53">
+    <!-- <div *ngIf="song.id===53">
         <div>
             <video class="my-4 w-100" width="100%" height="200" controlsList="nodownload noplaybackrate" controls>
                 <source src="../../assets/video/video.mp4" type="video/mp4">.
@@ -17,5 +19,5 @@
             <h5 class="m-2 text-center m-0 p-0 ">{{song.titolo}} - {{song.artista}}</h5>
             <h6 class="m-2 p-2  text-1">{{song.testo}}</h6>
         </div>
-    </div>
+    </div> -->
 </ion-content>

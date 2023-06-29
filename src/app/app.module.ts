@@ -10,10 +10,9 @@ import { MusicPage } from './music/music.page';
 import { TextPage } from './text/text.page';
 
 @NgModule({
-  declarations: [AppComponent, MusicPage, TextPage],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent, MusicPage, TextPage],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+    providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
